@@ -1,3 +1,5 @@
+// ===== LOGIN MODULE =====
+
 // Usuários carregados do JSON (cache em memória)
 let _usuarios = null;
 
@@ -32,6 +34,11 @@ async function login(email, senha) {
 function logout() {
   sessionStorage.removeItem("usuarioLogado");
   atualizarBarraLogin();
+}
+
+// Qualquer usuário logado pode realizar o CRUD de clubes
+function isAdmin() {
+  return !!getUsuarioLogado();
 }
 
 // ===== FAVORITOS =====

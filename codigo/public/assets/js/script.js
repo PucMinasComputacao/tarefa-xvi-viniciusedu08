@@ -14,7 +14,7 @@ function mostrarToast(msg) {
 
 const ICONE_FAV_VAZIO = `<i class="bi bi-bookmark icone-fav"></i>`;
 const ICONE_FAV_CHEIO = `<i class="bi bi-bookmark-fill icone-fav"></i>`;
-const BADGE_FAV = `<span class="badge-fav"><i class="bi bi-bookmark-fill me-1"></i>Favorito</span>`;
+const BADGE_FAV       = `<span class="badge-fav"><i class="bi bi-bookmark-fill me-1"></i>Favorito</span>`;
 
 // PÁGINA: INDEX — cards com favoritar
 async function carregarCards() {
@@ -23,6 +23,8 @@ async function carregarCards() {
 
   const resposta = await fetch("/carreira");
   const carreira = await resposta.json();
+
+  if (typeof montarBotaoAdicionar === "function") montarBotaoAdicionar();
 
   const pesquisa = document.getElementById("pesquisa");
 
@@ -92,9 +94,7 @@ async function carregarCards() {
           badge.remove();
         }
 
-        mostrarToast(
-          agora ? "Adicionado aos favoritos." : "Removido dos favoritos.",
-        );
+        mostrarToast(agora ? "Adicionado aos favoritos." : "Removido dos favoritos.");
       });
     });
   }
@@ -104,9 +104,9 @@ async function carregarCards() {
   if (pesquisa) {
     pesquisa.addEventListener("input", () => {
       const texto = pesquisa.value.toLowerCase();
-      mostrarCards(
-        carreira.filter((item) => item.clube.toLowerCase().includes(texto)),
-      );
+      mostrarCards(carreira.filter((item) =>
+        item.clube.toLowerCase().includes(texto)
+      ));
     });
   }
 }
@@ -121,7 +121,7 @@ async function carregarDetalhes() {
 
   const [respostaCarreira, respostaFotos] = await Promise.all([
     fetch(`/carreira/${id}`),
-    fetch(`/fotos?carreiraId=${id}`),
+    fetch(`/fotos?carreiraId=${id}`)
   ]);
 
   if (!respostaCarreira.ok) {
@@ -145,25 +145,24 @@ async function carregarDetalhes() {
         <p><strong>Assistências:</strong> ${item.assistencias}</p>
         <p><strong>Títulos:</strong> ${item.titulos}</p>
         <p>${item.descricao}</p>
+        <div id="acoesAdminDetalhes"></div>
       </div>
     </div>
     <hr class="my-5">
     <h2 class="mb-4">Fotos Relacionadas</h2>
     <div class="row">
-      ${fotos
-        .map(
-          (foto) => `
+      ${fotos.map((foto) => `
         <div class="col-md-4 mb-4">
           <div class="card rounded-4 overflow-hidden h-100">
             <img src="${foto.imagem}" class="card-img-top">
             <div class="card-body"><h5>${foto.titulo}</h5></div>
           </div>
         </div>
-      `,
-        )
-        .join("")}
+      `).join("")}
     </div>
   `;
+
+  if (typeof montarAcoesDetalhes === "function") montarAcoesDetalhes(item);
 }
 
 // PÁGINA: FAVORITOS
@@ -203,16 +202,12 @@ async function carregarFavoritos() {
   }
 
   // Busca apenas os itens favoritados usando os ids
-  const respostas = await Promise.all(
-    favIds.map((id) => fetch(`/carreira/${id}`)),
-  );
+  const respostas = await Promise.all(favIds.map((id) => fetch(`/carreira/${id}`)));
   const itensFav = await Promise.all(respostas.map((r) => r.json()));
 
   if (tituloFav) tituloFav.textContent = `Meus Favoritos (${itensFav.length})`;
 
-  favContainer.innerHTML = itensFav
-    .map(
-      (item) => `
+  favContainer.innerHTML = itensFav.map((item) => `
     <div class="col-md-4 mb-4">
       <div class="card h-100 rounded-4 overflow-hidden card-favoritado" id="favcard-${item.id}">
         <div class="position-relative">
@@ -233,9 +228,7 @@ async function carregarFavoritos() {
         </div>
       </div>
     </div>
-  `,
-    )
-    .join("");
+  `).join("");
 
   favContainer.querySelectorAll(".btn-remover-fav").forEach((btn) => {
     btn.addEventListener("click", () => {

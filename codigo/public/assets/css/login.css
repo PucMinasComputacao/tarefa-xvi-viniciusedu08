@@ -97,3 +97,15 @@
 #toastFeedback.visivel {
   opacity: 1;
 }
+
+/* ===== MODAL CRUD (criar/editar clube) — reaproveita .modal-overlay/.modal-box ===== */
+.modal-box.modal-box-lg {
+  max-width: 560px;
+}
+
+/* ===== AÇÕES DE ADMIN NA PÁGINA DE DETALHES ===== */
+.acoes-admin {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}

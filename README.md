@@ -42,3 +42,9 @@ Controle de versionamento avançado com Git (commits organizados e tags).
 
 <<  COLOQUE A IMAGEM - DELETE /carreira/:id >>
 ![alt text](./codigo/public/assets/img/print-delete.png)
+
+<<  COLOQUE A IMAGEM - Network: GET /carreira >>
+![alt text](./codigo/public/assets/img/print-get-network.png)
+
+<<  COLOQUE A IMAGEM - Network: POST /carreira >>
+![alt text](./codigo/public/assets/img/print-post-network.png)
