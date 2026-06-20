@@ -25,8 +25,8 @@ Controle de versionamento avançado com Git (commits organizados e tags).
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
+- Nome: Vinicius Eduardo de Souza Matos Silva
+- Matricula: 911693
 
 ## Prints do trabalho
 
