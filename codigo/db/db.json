@@ -1,13 +1,13 @@
 {
   "usuarios": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "admin",
       "email": "admin@email.com",
       "senha": "123456"
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Vinicius Eduardo",
       "email": "vinicius@email.com",
       "senha": "098765"
@@ -15,7 +15,7 @@
   ],
   "carreira": [
     {
-      "id": 1,
+      "id": "1",
       "clube": "Santos",
       "periodo": "2009 - 2013",
       "jogos": 225,
@@ -26,7 +26,7 @@
       "imagem": "assets/img/santos-antigo.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "clube": "Barcelona",
       "periodo": "2013 - 2017",
       "jogos": 186,
@@ -37,7 +37,7 @@
       "imagem": "assets/img/barcelona.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "clube": "PSG",
       "periodo": "2017 - 2023",
       "jogos": 173,
@@ -48,7 +48,7 @@
       "imagem": "assets/img/psg.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "clube": "Al-Hilal",
       "periodo": "2023 - 2025",
       "jogos": 7,
@@ -59,7 +59,7 @@
       "imagem": "assets/img/alhilal.jpg"
     },
     {
-      "id": 5,
+      "id": "5",
       "clube": "Santos",
       "periodo": "2025 - Atual",
       "jogos": 45,
@@ -70,7 +70,7 @@
       "imagem": "assets/img/santos-atual.jpg"
     },
     {
-      "id": 6,
+      "id": "6",
       "clube": "Brasil",
       "periodo": "2010 - Atual",
       "jogos": 128,
@@ -83,76 +83,77 @@
   ],
   "fotos": [
     {
-      "id": 1,
+      "id": "1",
       "carreiraId": 1,
       "titulo": "Libertadores 2011",
       "imagem": "assets/img/santos-libertadores.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "carreiraId": 1,
       "titulo": "Comemoração histórica",
       "imagem": "assets/img/santos-comemoracao.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "carreiraId": 2,
       "titulo": "Champions League 2015",
       "imagem": "assets/img/barcelona-champions.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "carreiraId": 2,
       "titulo": "Trio MSN",
       "imagem": "assets/img/msn.jpg"
     },
     {
-      "id": 5,
+      "id": "5",
       "carreiraId": 3,
       "titulo": "Título Francês",
       "imagem": "assets/img/psg-titulo.jpg"
     },
     {
-      "id": 6,
+      "id": "6",
       "carreiraId": 3,
       "titulo": "Final da Champions",
       "imagem": "assets/img/psg-champions.jpg"
     },
     {
-      "id": 7,
+      "id": "7",
       "carreiraId": 4,
       "titulo": "Apresentação no clube",
       "imagem": "assets/img/alhilal-apresentacao.jpg"
     },
     {
-      "id": 8,
+      "id": "8",
       "carreiraId": 4,
       "titulo": "Primeiro jogo",
       "imagem": "assets/img/alhilal-jogo.jpg"
     },
     {
-      "id": 9,
+      "id": "9",
       "carreiraId": 5,
       "titulo": "Apresentação no clube",
       "imagem": "assets/img/santos-apresentacao.jpeg"
     },
     {
-      "id": 10,
+      "id": "10",
       "carreiraId": 5,
       "titulo": "Um dos melhores jogos do craque, na segunda passagem",
       "imagem": "assets/img/santos-jogo.jpg"
     },
     {
-      "id": 11,
+      "id": "11",
       "carreiraId": 6,
       "titulo": "Maior artilheiro da seleção Brasileira",
       "imagem": "assets/img/selecao-artilheiro.jpg"
     },
     {
-      "id": 12,
+      "id": "12",
       "carreiraId": 6,
       "titulo": "O Herói Olímpico",
       "imagem": "assets/img/selecao-campeao.jpg"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
