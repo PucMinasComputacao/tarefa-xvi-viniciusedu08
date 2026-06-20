@@ -1,0 +1,99 @@
+/* ===== MODAL DE LOGIN ===== */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+  line-height: 1;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+/* ===== BOTÃO FAVORITO ===== */
+.btn-favorito {
+  background: none;
+  border: none;
+  padding: 2px 4px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: transform 0.15s;
+  line-height: 1;
+  color: #aaa;
+}
+
+.btn-favorito:hover {
+  transform: scale(1.2);
+  color: #666;
+}
+
+.btn-favorito.favoritado {
+  color: #555;
+}
+
+.btn-favorito .icone-fav {
+  display: block;
+}
+
+/* badge no card */
+.card-favoritado {
+  border: 2px solid #888 !important;
+}
+
+.badge-fav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #444;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* ===== TOAST ===== */
+#toastFeedback {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  z-index: 10000;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+#toastFeedback.visivel {
+  opacity: 1;
+}

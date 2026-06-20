@@ -1,0 +1,158 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "admin",
+      "email": "admin@email.com",
+      "senha": "123456"
+    },
+    {
+      "id": 2,
+      "nome": "Vinicius Eduardo",
+      "email": "vinicius@email.com",
+      "senha": "098765"
+    }
+  ],
+  "carreira": [
+    {
+      "id": 1,
+      "clube": "Santos",
+      "periodo": "2009 - 2013",
+      "jogos": 225,
+      "gols": 136,
+      "assistencias": 64,
+      "titulos": 6,
+      "descricao": "Neymar Jr. iniciou sua carreira profissional no Santos Futebol Clube, onde se destacou pela habilidade, dribles e muitos gols, conquistando títulos importantes como a Libertadores de 2011.",
+      "imagem": "assets/img/santos-antigo.jpg"
+    },
+    {
+      "id": 2,
+      "clube": "Barcelona",
+      "periodo": "2013 - 2017",
+      "jogos": 186,
+      "gols": 105,
+      "assistencias": 76,
+      "titulos": 8,
+      "descricao": "No FC Barcelona, Neymar formou um ataque histórico ao lado de Lionel Messi e Luis Suárez, conquistando títulos como a Liga dos Campeões e se consolidando entre os melhores jogadores do mundo.",
+      "imagem": "assets/img/barcelona.jpg"
+    },
+    {
+      "id": 3,
+      "clube": "PSG",
+      "periodo": "2017 - 2023",
+      "jogos": 173,
+      "gols": 118,
+      "assistencias": 77,
+      "titulos": 13,
+      "descricao": "Pelo Paris Saint-Germain F.C., Neymar foi protagonista em conquistas nacionais e ajudou o clube a alcançar sua primeira final de Liga dos Campeões, tornando-se uma das maiores estrelas do futebol francês.",
+      "imagem": "assets/img/psg.jpg"
+    },
+    {
+      "id": 4,
+      "clube": "Al-Hilal",
+      "periodo": "2023 - 2025",
+      "jogos": 7,
+      "gols": 1,
+      "assistencias": 3,
+      "titulos": 1,
+      "descricao": "No Al Hilal, Neymar chegou como uma das principais contratações da história do futebol saudita, levando grande visibilidade internacional ao clube, apesar das lesões terem limitado sua sequência de jogos.",
+      "imagem": "assets/img/alhilal.jpg"
+    },
+    {
+      "id": 5,
+      "clube": "Santos",
+      "periodo": "2025 - Atual",
+      "jogos": 45,
+      "gols": 18,
+      "assistencias": 9,
+      "titulos": 0,
+      "descricao": "Neymar Jr. retornou ao Santos Futebol Clube em sua segunda passagem como um dos maiores ídolos da história do clube, trazendo experiência, liderança e grande expectativa para os torcedores.",
+      "imagem": "assets/img/santos-atual.jpg"
+    },
+    {
+      "id": 6,
+      "clube": "Brasil",
+      "periodo": "2010 - Atual",
+      "jogos": 128,
+      "gols": 79,
+      "assistencias": 59,
+      "titulos": 2,
+      "descricao": "Neymar Jr. é um dos principais jogadores da história da Seleção Brasileira de Futebol, conhecido por sua habilidade, gols e pela conquista da medalha de ouro olímpica em 2016.",
+      "imagem": "assets/img/selecao.jpg"
+    }
+  ],
+  "fotos": [
+    {
+      "id": 1,
+      "carreiraId": 1,
+      "titulo": "Libertadores 2011",
+      "imagem": "assets/img/santos-libertadores.jpg"
+    },
+    {
+      "id": 2,
+      "carreiraId": 1,
+      "titulo": "Comemoração histórica",
+      "imagem": "assets/img/santos-comemoracao.jpg"
+    },
+    {
+      "id": 3,
+      "carreiraId": 2,
+      "titulo": "Champions League 2015",
+      "imagem": "assets/img/barcelona-champions.jpg"
+    },
+    {
+      "id": 4,
+      "carreiraId": 2,
+      "titulo": "Trio MSN",
+      "imagem": "assets/img/msn.jpg"
+    },
+    {
+      "id": 5,
+      "carreiraId": 3,
+      "titulo": "Título Francês",
+      "imagem": "assets/img/psg-titulo.jpg"
+    },
+    {
+      "id": 6,
+      "carreiraId": 3,
+      "titulo": "Final da Champions",
+      "imagem": "assets/img/psg-champions.jpg"
+    },
+    {
+      "id": 7,
+      "carreiraId": 4,
+      "titulo": "Apresentação no clube",
+      "imagem": "assets/img/alhilal-apresentacao.jpg"
+    },
+    {
+      "id": 8,
+      "carreiraId": 4,
+      "titulo": "Primeiro jogo",
+      "imagem": "assets/img/alhilal-jogo.jpg"
+    },
+    {
+      "id": 9,
+      "carreiraId": 5,
+      "titulo": "Apresentação no clube",
+      "imagem": "assets/img/santos-apresentacao.jpeg"
+    },
+    {
+      "id": 10,
+      "carreiraId": 5,
+      "titulo": "Um dos melhores jogos do craque, na segunda passagem",
+      "imagem": "assets/img/santos-jogo.jpg"
+    },
+    {
+      "id": 11,
+      "carreiraId": 6,
+      "titulo": "Maior artilheiro da seleção Brasileira",
+      "imagem": "assets/img/selecao-artilheiro.jpg"
+    },
+    {
+      "id": 12,
+      "carreiraId": 6,
+      "titulo": "O Herói Olímpico",
+      "imagem": "assets/img/selecao-campeao.jpg"
+    }
+  ]
+}

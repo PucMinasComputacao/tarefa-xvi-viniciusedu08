@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Neymar Jr</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <img class="logo" src="assets/img/logo.png" />
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="menu" class="collapse navbar-collapse">
+          <div class="navbar-nav ms-auto">
+            <a href="index.html" class="nav-link">Início</a>
+            <a href="#cards" class="nav-link">Carreira</a>
+            <a href="estatisticas.html" class="nav-link">Estatísticas</a>
+            <a href="#instituto" class="nav-link">Instituto Njr</a>
+            <a href="#sobre" class="nav-link">Sobre</a>
+          </div>
+          <!-- Área de login -->
+          <div
+            class="navbar-nav ms-3 border-start border-secondary ps-3"
+            id="loginArea"
+          ></div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container mt-4">
+      <div
+        id="carouselExample"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+      >
+        <div class="carousel-inner rounded-4">
+          <div class="carousel-item active">
+            <img src="assets/img/neymar.jpg" class="d-block w-100 banner" />
+            <div class="carousel-caption">
+              <h2>Neymar Jr</h2>
+              <p>Uma das maiores estrelas do futebol brasileiro.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/neymar2.jpg" class="d-block w-100 banner" />
+            <div class="carousel-caption">
+              <h2>Carreira Internacional</h2>
+              <p>Passagens marcantes por grandes clubes.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <main class="container mt-5">
+      <div class="row">
+        <div class="col-md-9 principal">
+          <article class="artigo">
+            <h1 class="mb-4">Neymar Júnior</h1>
+            <img
+              class="img-fluid imagem rounded-4 mb-3"
+              src="assets/img/neymar1.jpg"
+              id="foto"
+            />
+            <p>
+              Neymar da Silva Santos Júnior, conhecido como Neymar Jr, é um dos
+              jogadores de futebol mais conhecidos e talentosos do mundo.
+              Nascido em 5 de fevereiro de 1992, na cidade de Mogi das Cruzes,
+              em São Paulo, Neymar iniciou sua carreira nas categorias de base
+              do Santos Futebol Clube, onde rapidamente chamou atenção por sua
+              habilidade, velocidade e capacidade de driblar os adversários.
+              Ainda muito jovem, conquistou títulos importantes e se tornou um
+              dos principais nomes do futebol brasileiro.
+            </p>
+            <p>
+              Em 2013, Neymar foi contratado pelo FC Barcelona, formando um
+              ataque histórico ao lado de Lionel Messi e Luis Suárez. Durante
+              sua passagem pelo clube espanhol, conquistou diversos títulos,
+              incluindo a Liga dos Campeões da UEFA. Em 2017, transferiu-se para
+              o Paris Saint-Germain F.C. em uma negociação que se tornou a mais
+              cara da história do futebol na época.
+            </p>
+            <p>
+              Além do sucesso nos clubes, Neymar também teve grande destaque na
+              Seleção Brasileira de Futebol. O jogador participou de importantes
+              competições internacionais, como Copa do Mundo e Copa América,
+              sendo reconhecido como um dos principais atletas de sua geração.
+              Em 2016, conquistou a medalha de ouro olímpica nos Jogos do Rio de
+              Janeiro, um feito inédito para o futebol masculino brasileiro.
+            </p>
+            <p>
+              Fora dos gramados, Neymar também é uma personalidade muito
+              influente nas redes sociais e no mundo da publicidade. Sua
+              carreira é marcada tanto por grandes conquistas quanto por
+              desafios, como lesões e pressão da mídia. Mesmo assim, ele
+              continua sendo um símbolo do futebol brasileiro e uma referência
+              para milhões de fãs ao redor do mundo.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-3 barra-lateral">
+          <h3>Busca</h3>
+          <input
+            class="form-control mb-4"
+            type="text"
+            id="pesquisa"
+            placeholder="Pesquisar"
+          />
+          <h3>Menu</h3>
+          <div class="d-flex flex-column">
+            <a class="btn btn-outline-dark mb-2" href="#menu">Início</a>
+            <a class="btn btn-outline-dark mb-2" href="#cards">Carreira</a>
+            <a class="btn btn-outline-dark mb-2" href="#instituto"
+              >Instituto Njr</a
+            >
+            <a class="btn btn-outline-dark" href="#sobre">Sobre</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="container mt-5" id="cards">
+      <h2 class="mb-4">Clubes</h2>
+      <div class="row" id="cards-container"></div>
+    </section>
+
+    <div>
+      <article class="container mt-5 instituto" id="instituto">
+        <h2 class="mb-4">Instituto Neymar Jr</h2>
+        <img
+          class="img-fluid imagem rounded-4 mb-3"
+          src="assets/img/instituto-njr.jpg"
+        />
+        <h5>
+          O Instituto Neymar Jr. é um projeto social criado por Neymar Jr. e sua
+          família na cidade de Praia Grande. O instituto atende crianças,
+          adolescentes e famílias em situação de vulnerabilidade social,
+          oferecendo atividades esportivas, educação, cultura e lazer.
+        </h5>
+        <h5>
+          O principal objetivo do projeto é proporcionar oportunidades e
+          melhorar a qualidade de vida das pessoas atendidas, utilizando o
+          esporte e a educação como ferramentas de transformação social.
+        </h5>
+      </article>
+    </div>
+
+    <section class="container mt-5 mb-5 sobre" id="sobre">
+      <h2 class="mb-4">Informações do(a) Aluno(a)</h2>
+      <hr />
+      <div class="row">
+        <div class="col-md-8">
+          <h5><strong>Sobre</strong></h5>
+          <p>
+            Este projeto foi desenvolvido com o objetivo de apresentar a
+            carreira esportiva de Neymar Jr, mostrando sua trajetória nos clubes
+            por onde passou, estatísticas, títulos e também seu impacto social
+            através do Instituto Neymar Jr.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5><strong>Autoria</strong></h5>
+          <div class="d-flex align-items-center mt-3">
+            <img src="assets/img/foto-perfil.png" class="foto-perfil me-3" />
+            <div>
+              <p class="m-0">
+                <strong>Aluno:</strong> Vinicius Eduardo de Souza Matos Silva
+              </p>
+              <p class="m-0"><strong>Matrícula:</strong> 911693</p>
+              <p class="m-0"><strong>Curso:</strong> Engenharia de Software</p>
+              <p class="m-0"><strong>Turma:</strong> Manhã</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-3">
+      <p class="m-0">© 2026 - Projeto Neymar Jr</p>
+    </footer>
+
+    <!-- Toast de feedback -->
+    <div id="toastFeedback"></div>
+
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
